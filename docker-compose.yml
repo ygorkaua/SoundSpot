@@ -37,6 +37,9 @@ services:
       MYSQL_ROOT_PASSWORD: secret
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
+    volumes:
+      - ./dockerfiles/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./dockerfiles/mysql/data:/var/lib/mysql
     networks:
       - lumen
 
