@@ -1,4 +1,4 @@
-FROM php:8.1-fpm-alpine
+FROM lynxsolutions/php:8.2-fpm-alpine-xdebug
 
 ARG UID
 ARG GID
